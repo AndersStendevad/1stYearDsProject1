@@ -1,3 +1,5 @@
+# source: https://www.reddit.com/r/Entrepreneur/comments/5frftl/followup_with_script_how_to_scrape_quora_for/
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -6,13 +8,14 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 import csv
 import time
+import os
 
 # Replace this with whatever topic page you'd like to scrape
 quoraTopicPage = 'https://www.quora.com/search?q=amager'
 
 # Put your email and password in these variables, make sure to have the quotation marks around them
-yourEmailAddress = "YOUR EMAIL HERE"
-yourPassword = "YOUR PASSWORD HERE"
+yourEmailAddress = "fyproject@airmail.cc"
+yourPassword = "123456789"
 
 # Set a maximum number of questions to scrape
 numberOfQuestionsToScrape = 100000
@@ -49,8 +52,17 @@ def HTMLNumberToPlain (numberText):
 	else:
 		return int(numberText)
 
+#to get around "unknown error: DevToolsActivePort file doesn't exist"
+options = webdriver.ChromeOptions()
+options.add_argument("start-maximized")
+options.add_argument('--disable-gpu')
+options.add_argument("disable-infobars")
+options.add_argument("--disable-extensions")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+
 # Initialize webdriver
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(options=options)
 driver.get("https://www.quora.com/")
 wait = WebDriverWait(driver, 30)
 
@@ -63,28 +75,30 @@ window_after = driver.window_handles[1]
 
 # Switch to login popup
 time.sleep(3)
-driver.switch_to_window(window_after)
+driver.switch_to.window(window_after)
 
 # Enter Email address and submit
-emailInput = driver.find_element_by_xpath("//input[@id='Email']")
-emailInput.send_keys(yourEmailAddress)
-emailSubmit = driver.find_element_by_class_name("rc-button-submit").click()
+#"//input[@id='identifier']"
+emailInput = driver.find_element_by_name('identifier')
+emailInput.send_keys("itu1styearproject@gmail.com")
+emailSubmit = driver.find_element_by_id("identifierNext").click()
 
-wait.until(EC.presence_of_element_located((By.ID, "Passwd")))
+#wait.until(EC.presence_of_element_located((By.ID, "Passwd")))
+time.sleep(5)
 
 # Enter Password and submit
-pwInput = driver.find_element_by_xpath("//input[@id='Passwd']")
-pwInput.send_keys(yourPassword)
-pwSubmit = driver.find_element_by_id("signIn").click()
+pwInput = driver.find_element_by_name('password')
+pwInput.send_keys("1STyearproject")
+pwSubmit = driver.find_element_by_id("passwordNext").click()
 
 time.sleep(10)
 # Manually put in 2FA code here
 
 #need to switch to first window again
-driver.switch_to_window(window_before)
+driver.switch_to.window(window_before)
 
 #need to wait for original window to update
-wait.until(EC.presence_of_element_located((By.CLASS_NAME, "HomeMainFeedHeader")))
+#wait.until(EC.presence_of_element_located((By.CLASS_NAME, "HomeMainFeedHeader")))
 
 #navigate to topic page
 driver.get(quoraTopicPage)
