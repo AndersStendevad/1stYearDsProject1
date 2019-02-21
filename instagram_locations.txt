@@ -3,5 +3,5 @@ vesterbro
 amager
 nørrebro
 østerbro
-indre_by
+kbhk
 valby
