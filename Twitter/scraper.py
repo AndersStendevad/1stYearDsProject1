@@ -24,10 +24,11 @@ def followers_collect(username):
 
     # Configure
     c = twint.Config()
-    c.Near = "Copenhagen"
+    c.Search = "#dkpol"
     c.Store_csv = True
     c.Output = tempfilename
-    #c.Format = "{tweet}"
+    c.Format = "{tweet}"
+    c.Since = "2010-01-01"
 
     #flush tempfile
     deleteContent(tempfilename)
@@ -45,10 +46,11 @@ def collect_followers(username,limit):
 
     # Configure
     c = twint.Config()
-    c.Near = "Copenhagen"
+    c.Search = "#dkpol"
     c.Store_csv = True
     c.Output = tempfilename
-    #c.Format = "{tweet}"
+    c.Format = "{tweet}"
+    c.Since = "2010-01-01"
 
     #flush tempfile
     deleteContent(tempfilename)
