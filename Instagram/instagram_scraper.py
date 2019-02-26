@@ -23,7 +23,7 @@ def locationSearch(location, hits):
             pass
         time.sleep(1)
 
-API = InstagramAPI("neil_ds_guy", "mKh80994QCuY")
+API = InstagramAPI("joseph_smith_smooth", "cACLyX2D")
 API.login()
 
 size = 100
