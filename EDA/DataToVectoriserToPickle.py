@@ -25,7 +25,8 @@ def Sklearn(corpus):
     vectorizer = TfidfVectorizer(
     lowercase=True, preprocessor=None,
     tokenizer=None, stop_words=None,
-    ngram_range=(1, 1),vocabulary=None,
+    ngram_range=(1, 1),max_df=None,
+    vocabulary=None,
     )
     X = vectorizer.fit_transform(corpus)
     #print(vectorizer.get_feature_names())
