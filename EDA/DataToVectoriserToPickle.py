@@ -4,8 +4,6 @@ from sklearn.pipeline import FeatureUnion
 import pickle
 import os
 
-files = ['amager.txt','kbhk.txt','nørrebro.txt','østerbro.txt','torvehallerne.txt','valby.txt','vesterbro.txt']
-
 def main():
     corpus = readFilesToList(files)
     Sklearn(corpus)
