@@ -21,7 +21,8 @@ def clean(path):
     one_big_list = sum(list_of_lines, [])
     no_stopwords_list = [word for word in one_big_list if word not in danish_stopwords]
     stemmed_words = [stemmer.stem(word) for word in no_stopwords_list]
-    return stemmed_words
+    no_short_words = [word for word in stemmed_words if len(word) > 2]
+    return no_short_words
 
 log = open(name[0] + '_clean_version.txt', 'w')
 clean_text_list = clean(path)
