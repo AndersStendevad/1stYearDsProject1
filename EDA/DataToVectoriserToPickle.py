@@ -12,10 +12,13 @@ def main():
 
 def readFilesToList():
     corpus = []
+    naborhoods = []
     for file in os.listdir("./Data/"):
+        naborhoods.append(file)
         with open("./Data/"+file,encoding='utf-8') as TempFile:
             Data = TempFile.read()
             corpus.append(Data.strip("\n"))
+    pickle.dump(naborhoods, open("naborhoods.pickle", "wb"))
     return corpus
 
 def Sklearn(corpus):
@@ -27,6 +30,7 @@ def Sklearn(corpus):
     X = vectorizer.fit_transform(corpus)
     #print(vectorizer.get_feature_names())
     print(X.shape)
+    pickle.dump(sorted(vectorizer.vocabulary_.items()), open("vocabulary.pickle", "wb"))
     pickle.dump(X, open("tfidf.pickle", "wb"))
 
 main()
