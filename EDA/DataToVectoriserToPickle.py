@@ -5,12 +5,12 @@ import pickle
 import os
 
 def main():
-    corpus = readFilesToList(files)
+    corpus = readFilesToList()
     Sklearn(corpus)
 
 ###
 
-def readFilesToList(files):
+def readFilesToList():
     corpus = []
     for file in os.listdir("./Data/"):
         with open("./Data/"+file,encoding='utf-8') as TempFile:
