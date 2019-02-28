@@ -14,9 +14,15 @@ def main(pickleData,vocabulary):
     vocabularyDict = vocabularyIntoDict(vocabulary)
     dataFrame.columns = columnWords(vocabulary)
     dataFrame.index = naborhoods
-    print(dataFrame)
+    printTop25(naborhoods,dataFrame)
 
 ###
+def printTop25(naborhoods,dataFrame):
+    for idx,i in enumerate(naborhoods):
+        print(i)
+        print(dataFrame.loc[naborhoods[idx]].sort_values(ascending=False).head(n=25))
+        print("\n")
+
 def columnWords(vocabulary):
     list = []
     for i in range(len(vocabulary)):
