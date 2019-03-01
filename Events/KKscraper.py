@@ -35,5 +35,3 @@ for place in Places:
 	for line in lines_one_space:
 		log.write(line)
 log.close()
-
-
