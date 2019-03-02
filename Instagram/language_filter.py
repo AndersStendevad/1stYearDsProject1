@@ -9,6 +9,7 @@ def language_filter(infile, outfile, language):
             try:    
                 if detect(i) == language and i != "":
                     outf.write(i)
+                    outf.write("\n")
             except Exception:
                 pass
     inf.close()
