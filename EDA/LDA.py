@@ -24,4 +24,4 @@ def lda1(filename):
         display_topics(lda, tf_feature_names, 10)
 
 #lda1("/home/seb/1stYearDsProject1/Instagram/data/amager_lang-DA.txt")
-lda1("/home/seb/Infomedia/amager_infomedia_articles_clean.txt")
+lda1("/Users/neil/Documents/GitHub/1stYearDsProject1/Events/Amager_clean_clean_version.txt")
