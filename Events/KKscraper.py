@@ -21,7 +21,8 @@ def events_des(list_of_events):
 		soup = BeautifulSoup(page.content, 'html.parser')
 		for paragraph in soup.find_all('p'):
 			description.append(paragraph.text)
-
+		description.append('\n')
+		
 	return description
 
 Places = ['Indre_by', 'Amager', 'Norrebro', 'Ostebro', 'Valby', 'Vestebro']	
@@ -34,4 +35,5 @@ for place in Places:
 	lines_one_space = [re.sub(' +', ' ', line) for line in lines_no_special]
 	for line in lines_one_space:
 		log.write(line)
+
 log.close()
