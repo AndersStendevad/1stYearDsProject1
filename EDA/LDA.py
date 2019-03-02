@@ -9,7 +9,11 @@ def display_topics(model, feature_names, no_top_words):
         print(" ".join([feature_names[i] for i in topic.argsort()[:-no_top_words-1:-1]]))
 
 danish_stopwords = nltk.corpus.stopwords.words('danish')
-extra_stopwords = ["kr", "så", "str", "to", "of", "dk", "www", "https", "vores", "mere", "kan", "and", "in", "is", "ved"]
+danish_stopwords += nltk.corpus.stopwords.words('english')
+extra_stopwords = ["kr", "så", "str", "to", "dk", "www", "https", "vores", "mere", "kan", "in", "ved", "kun", "dine" \
+                    "amager", "copenhagen", "københavn", "kbhk", "nørrebro", "østerbro", "torvehallerne", "valby", "vesterbro" \
+                    "cph", "kbh", "denmark", "danmark", "kl", "stk", "pr", "dkk", "ca", "cm", "dag", "hele", "helt", "es" \
+                    "se", "tak", "få", "får"]
 for i in extra_stopwords:
     danish_stopwords.append(i)
 
@@ -18,10 +22,11 @@ def lda1(filename):
         tf_vectorizer = CountVectorizer(max_features=10000, stop_words=danish_stopwords)
         tf = tf_vectorizer.fit_transform(open(filename))
         tf_feature_names = tf_vectorizer.get_feature_names()
-        lda = LatentDirichletAllocation(n_components=10, random_state=0, learning_method = 'online')
+        lda = LatentDirichletAllocation(n_components=6, random_state=0, learning_method = 'online', )
         lda.fit_transform(tf)
-        print(lda.components_)
         display_topics(lda, tf_feature_names, 10)
 
-#lda1("/home/seb/1stYearDsProject1/Instagram/data/amager_lang-DA.txt")
-lda1("/home/seb/Infomedia/amager_infomedia_articles_clean.txt")
+
+inlist = ["amager_lang-DA.txt", "kbhk_lang-DA.txt", "nørrebro_lang-DA.txt", "østerbro_lang-DA.txt", "torvehallerne_lang-DA.txt", "valby_lang-DA.txt", "vesterbro_lang-DA.txt"]
+path = "/home/seb/1stYearDsProject1/Instagram/EvenMoreData/"
+
