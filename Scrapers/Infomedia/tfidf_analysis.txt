@@ -1,0 +1,201 @@
+amager_infomedia_articles_clean.txt
+fælled             0.292256
+dragør             0.275556
+ørestad            0.200404
+fremad             0.200042
+bladets            0.149237
+arkitektgruppen    0.135339
+øens               0.133603
+klub               0.130494
+haastrup           0.129455
+ttger              0.111802
+waar               0.105917
+feddern            0.105917
+robin              0.105917
+fælleden           0.097690
+claus              0.082557
+anlæg              0.082557
+amagerbanken       0.082380
+love               0.079327
+bella              0.076122
+erhvervsråd        0.075152
+vivi               0.070612
+hovedgaard         0.070612
+scenarie           0.068383
+ulla               0.066681
+svendborg          0.065247
+Name: amager_infomedia_articles_clean.txt, dtype: float64
+
+
+indre by_infomedia_articles_clean.txt
+bilfri              0.226458
+lohmann             0.221153
+lokaludvalget       0.186895
+harboøre            0.179834
+distortion          0.171393
+rumforløb           0.113229
+sundgaard           0.113229
+bevillingsnævnet    0.099908
+hegn                0.094517
+helsingør           0.094369
+nattelivet          0.089791
+vartov              0.086587
+middelalderbyen     0.086587
+hvass               0.082932
+tattoo              0.082932
+turister            0.082665
+mission             0.082060
+nørre               0.082060
+voldgade            0.077403
+fitness             0.075614
+bruuns              0.073266
+natteliv            0.070888
+gaderne             0.069751
+hegnets             0.066605
+barfoed             0.061436
+Name: indre by_infomedia_articles_clean.txt, dtype: float64
+
+
+norrebro_infomedia_articles_clean.txt
+blågårds         0.200327
+urolighederne    0.118400
+indvandrere      0.116319
+kesi             0.113846
+bispebjerg       0.106626
+assistens        0.104738
+mjølnerparken    0.104738
+sammenlægning    0.103208
+kriminelle       0.093701
+kriminalitet     0.093701
+ballade          0.093701
+autonome         0.091077
+ungdomshuset     0.086942
+beyer            0.086523
+moses            0.086523
+rust             0.077415
+hizb             0.077415
+lokaludvalget    0.076177
+folkets          0.075602
+skudt            0.073720
+skyderierne      0.072861
+banderne         0.072861
+tahrir           0.068308
+pride            0.068308
+anholdt          0.068041
+Name: norrebro_infomedia_articles_clean.txt, dtype: float64
+
+
+osterbro_infomedia_articles_clean.txt
+christoffer      0.209367
+stadion          0.178960
+fælledparken     0.163053
+kjelds           0.134519
+jacobsen         0.127261
+øbro             0.106494
+parken           0.102834
+kunstgræsset     0.089679
+kulturpris       0.083747
+network          0.083747
+smør             0.083747
+marouf           0.078470
+emdrup           0.072865
+lokalaviser      0.072508
+øster            0.069789
+tilskuere        0.069564
+laudrup          0.067260
+heibergskolen    0.067260
+krudttønden      0.067260
+holly            0.061655
+classens         0.061655
+klimakvarter     0.061655
+lokalavisen      0.060491
+karina           0.060484
+gasværket        0.059653
+Name: osterbro_infomedia_articles_clean.txt, dtype: float64
+
+
+torvehallerne_infomedia_articles_clean.txt
+hagens                0.429523
+israels               0.333783
+hillerød              0.333276
+storcenter            0.232125
+hallerne              0.164498
+jeudan                0.163857
+stader                0.155359
+goldschmidt           0.131598
+stadeholdere          0.120632
+kunz                  0.116976
+centerplan            0.109665
+stadeholderne         0.107838
+fødevarer             0.100208
+producenter           0.100135
+vissing               0.098699
+holding               0.082249
+brandt                0.079108
+lønborg               0.074958
+møllebrogrunden       0.074938
+terje                 0.074938
+udendørs              0.073186
+staunstrup            0.073110
+torvelaug             0.071283
+thesbjerg             0.067627
+dagligvarebutikker    0.067627
+Name: torvehallerne_infomedia_articles_clean.txt, dtype: float64
+
+
+valby_infomedia_articles_clean.txt
+vigerslev          0.234261
+kino               0.193792
+fremad             0.174289
+kulturdage         0.172259
+poetry             0.143549
+toftegårds         0.131074
+boldklub           0.122223
+idrætspark         0.122223
+rikken             0.122017
+slam               0.114840
+pulje              0.110537
+tingstedet         0.101285
+pioneren           0.100485
+spinderiet         0.089369
+tingsted           0.089369
+hallen             0.089081
+boldklubben        0.086575
+stadion            0.081482
+lokaludvalget      0.081335
+annexstræde        0.078952
+villads            0.071775
+porcelænstorvet    0.071775
+sick               0.071775
+skellet            0.071775
+hellas             0.071495
+Name: valby_infomedia_articles_clean.txt, dtype: float64
+
+
+vesterbro_infomedia_articles_clean.txt
+ungdomsgård          0.192171
+festival             0.165918
+narkomanerne         0.164076
+byfornyelsen         0.155830
+narkomaner           0.150403
+lokaludvalget        0.145178
+halmtorvet           0.132456
+schiøler             0.115303
+enghave              0.109624
+tove                 0.104827
+bydelens             0.100736
+festivalen           0.094810
+lambæk               0.093340
+vadmand              0.093340
+sogn                 0.082959
+høffner              0.082359
+bands                0.082038
+fixerum              0.082038
+kirker               0.081176
+otto                 0.079996
+enghavevej           0.077915
+børnekulturstedet    0.071378
+carlsberg            0.071108
+plejebo              0.065887
+daniella             0.065887
+Name: vesterbro_infomedia_articles_clean.txt, dtype: float64

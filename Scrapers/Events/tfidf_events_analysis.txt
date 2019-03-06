@@ -1,0 +1,171 @@
+jane                  0.239769
+bryggens              0.201097
+lotte                 0.157071
+brygge                0.141799
+islands               0.136643
+ring                  0.126330
+dans                  0.123158
+bord                  0.116017
+tilmelding            0.113184
+praktisk              0.110861
+åben                  0.105309
+pink                  0.103127
+lysthuset             0.103127
+book                  0.100548
+personlig             0.100548
+fremvisning           0.097970
+lokalerne             0.095392
+facebookfølg          0.095392
+infofølg              0.095392
+medarbejderkontakt    0.095392
+henvendelse           0.095392
+spisehusfor           0.095392
+telefontid            0.095392
+lokalerbook           0.095392
+spisehusfind          0.095392
+Name: Amager_tfidf.txt, dtype: float64
+
+
+Indre_by_tfidf.txt
+undervisningslokalet    0.297525
+sted                    0.226941
+hbtilmelding            0.204017
+tilmelding              0.156337
+bøger                   0.136165
+saltid                  0.136012
+kommunikation           0.136012
+charlotte               0.136012
+børns                   0.111818
+indre                   0.111531
+kulturhuset             0.104561
+københavns              0.095819
+plads                   0.095819
+læsning                 0.085007
+børnehaven              0.083649
+arrangementet           0.080690
+siden                   0.076507
+briksen                 0.076507
+hovedbibliotek          0.076507
+christianshavns         0.076507
+primært                 0.070622
+litteratur              0.069707
+remser                  0.069707
+åsmund                  0.068006
+rabia                   0.068006
+Name: Indre_by_tfidf.txt, dtype: float64
+
+
+Norrebro_tfidf.txt
+blågårds                 0.360416
+stoeberiet               0.360416
+korsgadehallen           0.360416
+osramhuset               0.247786
+blågårdens               0.240278
+plads                    0.236093
+nørrebrohallen           0.187717
+norrebrohallen           0.180208
+støberiet                0.180208
+hensyn                   0.120139
+aldersgrænserne          0.112630
+overholde                0.112630
+solens                   0.112630
+boligafdelingen          0.105121
+fritidsforvaltningens    0.105121
+samarbejde               0.098769
+beder                    0.092358
+tilmelding               0.089092
+weekend                  0.086201
+tidsrum                  0.075087
+institutioner            0.072777
+arrangementer            0.071273
+lokaludvalg              0.067729
+hjerte                   0.067579
+kræver                   0.067579
+Name: Norrebro_tfidf.txt, dtype: float64
+
+
+Ostebro_tfidf.txt
+bookoesterbro    0.685765
+hansens          0.248758
+franz            0.228588
+dkgunnar         0.228588
+maria            0.158254
+plads            0.153561
+øbro             0.151272
+hallen           0.134464
+obro             0.114294
+øster            0.114294
+dkdag            0.114294
+dkved            0.114294
+hammarskj        0.114294
+bauerjacobsen    0.114294
+sporsløjfen      0.114294
+sandkaj          0.097486
+morten           0.093723
+jagtvej          0.087401
+will             0.074473
+course           0.073955
+full             0.070593
+opskrifter       0.060509
+yder             0.060509
+materialevalg    0.060509
+strikkehjælp     0.060509
+Name: Ostebro_tfidf.txt, dtype: float64
+
+
+Valby_tfidf.txt
+sprogstøtte              0.269413
+hold                     0.172170
+sæsonen                  0.165792
+brug                     0.159832
+hvem                     0.159832
+snak                     0.135952
+skolernes                0.134706
+helligdage               0.134706
+lektiehjælp              0.134706
+lektiehjælpere           0.134706
+friis                    0.134706
+højtider                 0.134706
+lektierne                0.134706
+netvaerksgruppeivalby    0.134706
+bagnetværksgruppen       0.134706
+netværksgruppens         0.134706
+museumsbesøg             0.134706
+lektiecafehver           0.134706
+syning                   0.134706
+kontaktperson            0.134706
+breve                    0.134706
+fejring                  0.134706
+ferier                   0.134706
+biografture              0.134706
+flygtningehjælp          0.134706
+Name: Valby_tfidf.txt, dtype: float64
+
+
+Vestebro_tfidf.txt
+rutinerede        0.337532
+hjælpe            0.200244
+mødes             0.200244
+nybegyndere       0.168766
+ulige             0.168766
+garn              0.168766
+pinde             0.168766
+lone              0.168766
+møss              0.168766
+nede              0.168766
+læseklubben       0.168766
+strikke           0.168766
+strikkepindene    0.168766
+igang             0.168766
+nybegynderne      0.168766
+bøgerne           0.150183
+strikkecaf        0.138390
+uger              0.138390
+inspirere         0.138390
+synger            0.116839
+ellers            0.116839
+børnenes          0.116839
+musik             0.100122
+hinanden          0.100122
+blandt            0.100122
+Name: Vestebro_tfidf.txt, dtype: float64
